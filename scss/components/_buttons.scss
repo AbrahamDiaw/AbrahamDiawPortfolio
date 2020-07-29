@@ -1,0 +1,48 @@
+button {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 176px;
+    height: 48px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.button1 {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    text-transform: uppercase;
+    transform: translate(-50%) scale(1);
+    transition: transform 400ms;
+
+    &:hover {
+        transform: translate(-50%) scale(1.15);
+        background-color: #2A327D;
+        // color: #000;
+        border: 1px solid #13183f;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    button {
+        top: 63%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    button {
+        top: 56%;
+        width: 142px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    button {
+        top: 54%;
+        width: 142px;
+    }
+}

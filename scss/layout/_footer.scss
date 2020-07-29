@@ -1,0 +1,36 @@
+footer {
+  text-align: center;
+  background-color: $colour-background;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+#portfoliofooter {
+  margin-top: 22%;
+}
+
+#linkedin-icon {
+  background: #fff;
+  border: #fff solid 6px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 520px) {
+  #copyright {
+    color: #fff;
+  }
+
+  #linkedin-icon {
+    width: 7%;
+    height: 33px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  #linkedin-icon {
+    width: 8%;
+    height: 26px;
+  }
+}

@@ -1,0 +1,145 @@
+#portfolio {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.folio-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 0 40px;
+    transform: translate(13%, 50%);
+}
+
+.folio-container .box:nth-child(1):before {
+    background: linear-gradient(315deg, #821212, #1d2685);
+}
+
+.folio-container .box:nth-child(2):before {
+    background: linear-gradient(315deg, #821212, #1d2685);
+}
+
+.folio-container .box:nth-child(3):before {
+    background: linear-gradient(315deg, #821212, #1d2685);
+}
+
+.folio-container .box:nth-child(4):before {
+    background: linear-gradient(315deg, #821212, #1d2685);
+}
+
+.box {
+    position: relative;
+    height: 400px;
+    background: $colour-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        transform: translateY(40px);
+
+        .folio {
+            font-weight: bold;
+            position: absolute;
+            top: -47px;
+            right: 20px;
+            margin: 0;
+            font-size: 10em;
+            color: rgba(255, 255, 255, 0.15);
+            transition: 0.5s;
+        }
+    }
+}
+
+.folio-container .box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.box:hover .content .folio {
+    top: -120px;
+}
+
+.box:hover .content .folio-special {
+    top: -207px;
+}
+
+.box {
+    .content {
+        .folio2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    }
+}
+
+.box {
+    .content {
+        .readmore {
+            position: relative;
+            margin: 13px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #fff;
+            display: inline-block;
+            color: #fff;
+            transition: 0.5s;
+            transform: translateY(-40px);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+.box:hover .content .readmore {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content .readmore:hover {
+    color: #000;
+    background: #fff;
+}
+
+@media screen and (max-width: 1160px) {
+    .folio-container {
+        width: 80%;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-gap: 0 29px;
+        transform: translate(14%, 50%);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .folio-container {
+        width: 52%;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-gap: 40px 40px;
+        transform: translate(50%, 7%);
+    }
+
+    #portfolio {
+        background: #111336;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .folio-container {
+        width: 74%;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-gap: 40px 40px;
+        transform: translate(14%, 11%);
+    }
+}
