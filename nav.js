@@ -1,11 +1,11 @@
-var open = document.getElementById('hamburger');
-var changeIcon = true;
+let open = document.getElementById('hamburger');
+let changeIcon = true;
 
 open.addEventListener("click", () => {
 
-    var overlay = document.querySelector('.overlay');
-    var nav = document.querySelector('nav');
-    var icon = document.querySelector('.menu-toggle i');
+    let overlay = document.querySelector('.overlay');
+    let nav = document.querySelector('nav');
+    let icon = document.querySelector('.menu-toggle i');
 
     overlay.classList.toggle("menu-open");
     nav.classList.toggle("menu-open");
