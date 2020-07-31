@@ -867,6 +867,30 @@ section {
     grid-gap: 40px 40px;
     transform: translate(14%, 11%);
   }
+
+  .box .content .readmore {
+    position: relative;
+    margin: 13px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .box:hover .content .readmore {
+    transform: none;
+    opacity: none;
+    visibility: none;
+  }
+
+  .box .content .folio {
+    top: -120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
