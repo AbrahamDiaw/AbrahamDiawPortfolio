@@ -701,7 +701,7 @@ section {
 
 .éducation-container {
   margin: 20px;
-  background: #D1D1D1;
+  background: #d1d1d1;
   border-radius: 15px;
   width: 50%;
   height: 100px;
@@ -712,6 +712,11 @@ section {
   transform: translate(47%, -10%);
 }
 
+@media screen and (max-width: 940px) {
+  h5 {
+    padding: 11px;
+  }
+}
 @media screen and (max-width: 520px) {
   .img-circle {
     width: 200px;
@@ -721,6 +726,10 @@ section {
   img {
     width: 200px;
     height: 200px;
+  }
+
+  h5 {
+    padding: 5%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -733,6 +742,17 @@ section {
     font-size: 15px;
     padding-bottom: 6px;
     padding-top: 12px;
+  }
+}
+@media screen and (max-width: 380px) {
+  h5 {
+    padding: 6%;
+    font-size: 12px;
+  }
+
+  .éducation-container {
+    margin: 5px;
+    margin-bottom: 5px;
   }
 }
 #portfolio {
@@ -889,7 +909,7 @@ section {
   }
 
   .box .content .folio {
-    top: -120px;
+    top: -104px;
   }
 }
 
